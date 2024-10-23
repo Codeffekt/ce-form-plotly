@@ -1,1 +1,16 @@
+<div class="media-default-container">
 <plotly-plot *ngIf="graph" [data]="graph.data" [layout]="graph.layout"></plotly-plot>
+</div>
+
+<div class="media-default-infos text-muted">
+    <span><small>{{(elt.metadata?.timestamp ?? elt.mtime ?? elt.ctime) | date:'short'}}</small></span>    
+    <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="mode ==='edit'">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (ngReallyClick)="doDelete()" ngReallyTitle="Confirmation requise"
+            ngReallyMessage="Confirmer la suppression de ce media">
+            <span>Supprimer</span>
+        </button>
+    </mat-menu>
+</div>

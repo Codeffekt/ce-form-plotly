@@ -1,6 +1,6 @@
 {
   "name": "@codeffekt/ce-form-plotly",
-  "version": "18.0.0",
+  "version": "18.0.1",
   "description": "CeCore render component for plotly asset mimetype",
   "author": {
     "name": "Codeffekt",
@@ -19,7 +19,7 @@
     "@angular/material": "^18.2.8",
     "@angular/cdk": "^18.2.8",
     "@ngneat/until-destroy": "^8.1.4",
-    "@codeffekt/ce-core": "^18.0.0",
+    "@codeffekt/ce-core": "^18.0.2",
     "@codeffekt/ce-core-data": "^1.2.0",
     "rxjs": "^7.5.7"    
   },

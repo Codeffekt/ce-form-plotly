@@ -4,6 +4,7 @@ import { MediaPlotlyComponent } from "./media-plotly/media-plotly.component";
 
 import * as PlotlyJS from 'plotly.js-dist-min';
 import { PlotlyModule } from "angular-plotly.js";
+import { CeFormPlotlyMediaToTypeFunc } from "./ce-form-plotly-media-func";
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -21,5 +22,9 @@ export class CePlotlyModule {
                 useClass: MediaPlotlyComponent,
             },
         });
+
+        storeService.registerMediaToTypeFunc(
+            CeFormPlotlyMediaToTypeFunc
+        );
     }
 }
