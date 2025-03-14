@@ -6,16 +6,15 @@ import { AssetElt, FormBlock } from '@codeffekt/ce-core-data';
 import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
 
 @Component({
-  selector: 'app-demo-form-block',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,        
-    CeFormBlocksModule,
-    CePlotlyModule,   
-  ],
-  templateUrl: './demo-form-block.component.html',
-  styleUrl: './demo-form-block.component.scss'
+    selector: 'app-demo-form-block',
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        CeFormBlocksModule,
+        CePlotlyModule,
+    ],
+    templateUrl: './demo-form-block.component.html',
+    styleUrl: './demo-form-block.component.scss'
 })
 export class DemoFormBlockComponent {
 

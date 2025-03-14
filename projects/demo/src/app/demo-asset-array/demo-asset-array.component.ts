@@ -5,15 +5,14 @@ import { FormInstance, FormWrapper } from '@codeffekt/ce-core-data';
 import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
 
 @Component({
-  selector: 'app-demo-asset-array',
-  standalone: true,
-  imports: [
-    CommonModule,    
-    CeFormsModule,
-    CePlotlyModule,   
-  ],
-  templateUrl: './demo-asset-array.component.html',
-  styleUrl: './demo-asset-array.component.scss'
+    selector: 'app-demo-asset-array',
+    imports: [
+        CommonModule,
+        CeFormsModule,
+        CePlotlyModule,
+    ],
+    templateUrl: './demo-asset-array.component.html',
+    styleUrl: './demo-asset-array.component.scss'
 })
 export class DemoAssetArrayComponent {
 

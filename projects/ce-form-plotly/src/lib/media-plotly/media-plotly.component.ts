@@ -8,18 +8,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'ce-media-plotly',
-  standalone: true,
-  imports: [
-    CommonModule,
-    PlotlyModule,
-    CeNgReallyModule,
-    MatIconModule,
-    MatMenuModule,
-    MatButtonModule,
-  ],
-  templateUrl: './media-plotly.component.html',
-  styleUrl: './media-plotly.component.scss'
+    selector: 'ce-media-plotly',
+    imports: [
+        CommonModule,
+        PlotlyModule,
+        CeNgReallyModule,
+        MatIconModule,
+        MatMenuModule,
+        MatButtonModule,
+    ],
+    templateUrl: './media-plotly.component.html',
+    styleUrl: './media-plotly.component.scss'
 })
 export class MediaPlotlyComponent implements OnInit {
 

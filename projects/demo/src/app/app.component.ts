@@ -7,29 +7,28 @@ import { FakeAssetsService } from './fake-assets.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true, 
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    CeCoreModule,
-  ], 
-  providers: [
-    {
-      provide: CeCoreService,
-      useClass: FakeCeCoreService,
-    },
-    {
-      provide: SpaceFormPathService,
-      useClass: FakeSpaceFormPathService,
-    },
-    {
-      provide: CeAssetsService,
-      useClass: FakeAssetsService,
-    }
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        CeCoreModule,
+    ],
+    providers: [
+        {
+            provide: CeCoreService,
+            useClass: FakeCeCoreService,
+        },
+        {
+            provide: SpaceFormPathService,
+            useClass: FakeSpaceFormPathService,
+        },
+        {
+            provide: CeAssetsService,
+            useClass: FakeAssetsService,
+        }
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {    
   
