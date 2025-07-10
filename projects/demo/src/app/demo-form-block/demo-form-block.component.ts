@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { CeCoreModule, CeFormBlocksModule } from '@codeffekt/ce-core';
+import { CeFormBlocksModule, FormBlockFactoryComponent } from '@codeffekt/ce-core';
 import { AssetElt, FormBlock } from '@codeffekt/ce-core-data';
 import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
 
@@ -11,6 +11,7 @@ import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
         CommonModule,
         ReactiveFormsModule,
         CeFormBlocksModule,
+        FormBlockFactoryComponent,
         CePlotlyModule,
     ],
     templateUrl: './demo-form-block.component.html',
@@ -25,7 +26,7 @@ export class DemoFormBlockComponent {
     field: "asset",
     label: "Graph Plotly",
     value: {
-      id: "graph.json",
+      id: "webgl.json",
       ctime: Date.now(),
       name: "Demo Plotly",
       mimetype: "application/plotly",

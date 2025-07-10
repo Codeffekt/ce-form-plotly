@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CeFormsModule } from '@codeffekt/ce-core';
+import { CeFormComponent, CeFormsModule } from '@codeffekt/ce-core';
 import { FormInstance, FormWrapper } from '@codeffekt/ce-core-data';
 import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
 
@@ -8,6 +8,7 @@ import { CePlotlyModule } from '@codeffekt/ce-form-plotly';
     selector: 'app-demo-asset-array',
     imports: [
         CommonModule,
+        CeFormComponent,
         CeFormsModule,
         CePlotlyModule,
     ],

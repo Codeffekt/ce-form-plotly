@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "type": "scatter3d",
+      "mode": "markers",
+      "x": [1, 2, 3, 4, 5],
+      "y": [10, 11, 12, 13, 14],
+      "z": [5, 6, 7, 8, 9],
+      "marker": {
+        "size": 5,
+        "color": [5, 6, 7, 8, 9],
+        "colorscale": "Viridis",
+        "opacity": 0.8
+      }
+    }
+  ],
+  "layout": {
+    "margin": {
+      "l": 0,
+      "r": 0,
+      "b": 0,
+      "t": 0
+    },
+    "scene": {
+      "xaxis": { "title": "X Axis" },
+      "yaxis": { "title": "Y Axis" },
+      "zaxis": { "title": "Z Axis" }
+    },
+    "title": "Exemple de graphique 3D"
+  }
+}
