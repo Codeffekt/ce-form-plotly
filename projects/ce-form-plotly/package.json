@@ -1,6 +1,6 @@
 {
   "name": "@codeffekt/ce-form-plotly",
-  "version": "19.1.1",
+  "version": "19.1.2",
   "description": "CeCore render component for plotly asset mimetype",
   "author": {
     "name": "Codeffekt",

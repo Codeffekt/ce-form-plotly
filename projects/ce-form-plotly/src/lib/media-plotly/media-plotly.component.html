@@ -1,9 +1,10 @@
-<div class="media-default-container">
 <plotly-plot *ngIf="graph" [data]="graph.data" [layout]="layout" [config]="{ responsive: true }"></plotly-plot>
-</div>
 
+@if(mode !== 'minimal') {
 <div class="media-default-infos text-muted">
-    <span><small>{{(elt.metadata?.timestamp ?? elt.mtime ?? elt.ctime) | date:'short'}}</small></span>    
+    <span><small>{{(elt.metadata?.timestamp ?? elt.mtime ?? elt.ctime) | date:'short'}}</small></span>
+
+    @if(mode ==='edit'){
     <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="mode ==='edit'">
         <mat-icon>more_vert</mat-icon>
     </button>
@@ -19,4 +20,6 @@
             <span>Supprimer</span>
         </button>
     </mat-menu>
+    }
 </div>
+}

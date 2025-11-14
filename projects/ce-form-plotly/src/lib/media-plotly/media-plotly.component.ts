@@ -23,7 +23,7 @@ import { Layout } from 'plotly.js-dist-min';
 })
 export class MediaPlotlyComponent implements OnInit {
 
-  @Input() mode: 'view' | 'edit' = 'edit';
+  @Input() mode: 'minimal' | 'view' | 'edit' = 'edit';
   @Input() elt!: AssetElt;
   @Output() delete: EventEmitter<AssetElt> = new EventEmitter();
 

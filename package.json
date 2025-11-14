@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build ce-form-plotly",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:lib": "ng build --configuration production ce-form-plotly",
