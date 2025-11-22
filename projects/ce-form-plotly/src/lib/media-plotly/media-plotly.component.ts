@@ -66,7 +66,12 @@ export class MediaPlotlyComponent implements OnInit {
     const response = await fetch(this.coreService.urlFromAssetId(this.elt.id));
     const graphContent = await response.json();
     this.graph = graphContent;
+
+    // Ensure that if no width is set, autosize is disabled
+    if (!this.graph.layout.width) {
+      this.graph.layout.autosize = false;
+    }
+
     this.layout = this.graph.layout;
   }
-
 }
